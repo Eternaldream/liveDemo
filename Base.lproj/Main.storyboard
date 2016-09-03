@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wuh-m4-mla">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Fzc-FJ-NrN">
+            <objects>
+                <viewController id="Wuh-m4-mla" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qre-6J-Ros"/>
+                        <viewControllerLayoutGuide type="bottom" id="zZX-Fh-LVr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eoy-CY-uhu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jn-IB-bDl">
+                                <rect key="frame" x="80" y="343" width="440" height="57"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="I8I-bu-Uxp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="播放/暂停">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="play_btn:" destination="Wuh-m4-mla" eventType="touchUpInside" id="pQL-nH-3Ey"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95310930660000004" green="0.95310930660000004" blue="0.95310930660000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9jn-IB-bDl" secondAttribute="trailing" constant="60" id="QTT-aj-A2G"/>
+                            <constraint firstItem="9jn-IB-bDl" firstAttribute="leading" secondItem="eoy-CY-uhu" secondAttribute="leadingMargin" constant="60" id="YQo-65-UiD"/>
+                            <constraint firstItem="zZX-Fh-LVr" firstAttribute="top" secondItem="9jn-IB-bDl" secondAttribute="bottom" constant="200" id="dI8-Qs-zrq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4H-g6-mq1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="418"/>
+        </scene>
+    </scenes>
+</document>
